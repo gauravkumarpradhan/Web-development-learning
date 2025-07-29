@@ -1,0 +1,45 @@
+Interview:
+1. Go to youtube -> see the videos of interview experiences in good companies + also in your mind if some good companies comes then refer that company Fe interview experiences.
+2. Performance and optimisations for web app (Some very long and good videos are there).
+3. JavaScript concepts and output based questions using those concepts, concepts example, real life tech usage of these concepts (Just memorize, so that you could speak in interview)
+4. Using concepts of JavaScript and React they could ask to create something like pollyfills and hooks from scratch.
+5. For sde-1(LLD) and for sde-2(HLD). (Refer from youtube)
+6. Before interview just watch some videos.
+7. When extra time is there learn dsa. (Only focus on the concepts, algorithms, data structures which are frequently asked to Frontend developers) (Check posts in linkedin).
+
+Learning -> Interview + Self improvement on frontend tech stacks 
+
+Self improvement:
+
+Next.js
+Integration testing,
+Unit testing,
+E2E testing,
+How to work on WebRtc and Websockets
+
+
+Also note down the important youtube channels (Switch , Knowledge)
+Switch (Which will help for switching company).
+Knowledge (Which will help for imporving knowledge).
+
+
+
+Always remember:
+Remember Gaurav that, without preparation also with the effort which you have put in earlier you can reach to the last stage of the interviews, but as we know that we should always be
+through with our knowledge so prepare and apply also improve your knowledge with new tech stacks, and remember to always be connected with god and family and enjoy your life.
+
+
+Interview experience links:
+1. sde-2 (Meesho) (https://www.linkedin.com/posts/shafi-khan-_samshubfrontend-interviewexperience-activity-7223715476974039040-Zlvw/)
+2. sde-2 (livespace) (https://www.linkedin.com/posts/shafi-khan-_samshubfrontend-activity-7213135616073486336-VO09/)
+3. sde-1 (Zeta) (https://www.linkedin.com/posts/prakharchauhan281098_opentowork-frontenddevelopment-javascript-activity-7281324742110773249-p7HQ/)
+4. sde-2 (Tekion) (https://www.linkedin.com/posts/shafi-khan-_samshubfrontend-interviewpreparation-activity-7086249308085260288-IJse/)
+
+Famous Youtubers:
+1. Namaste javascript.
+2. Roadside coder.
+
+
+
+
+
