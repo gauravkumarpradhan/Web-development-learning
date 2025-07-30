@@ -1,0 +1,37 @@
+.tab-title-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 4px;
+}
+
+.tab-title-item {
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.tab-title-item:hover {
+    background-color: red;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-content-container {
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-title-item-selected {
+    background: green;
+}

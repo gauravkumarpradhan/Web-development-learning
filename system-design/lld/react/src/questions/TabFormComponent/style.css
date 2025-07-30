@@ -1,0 +1,11 @@
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.error-label {
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+}
