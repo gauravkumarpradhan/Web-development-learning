@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+}
+
+.search-bar-list {
+    border: 1px solid black;
+    padding: 12px 0px;
+    height: 200px;
+    width: 500px;
+    overflow-y: scroll;
+}
+
+.search-bar-input {
+    width: 500px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 6px 0px;
+    padding-left: 2px;
+    border-radius: 8px;
+}
+
+.search-bar {
+    width: 500px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.search-bar-list-item {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.search-bar-list-item-focus {
+    background: green;
+}
+
+.search-bar-list-item-loader {
+    padding: 12px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.search-bar-list-item:hover {
+    background-color: aquamarine;
+}
+
+.text-match {
+    color: red;
+    font-weight: 600;
+}
