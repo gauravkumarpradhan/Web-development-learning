@@ -1,16 +1,13 @@
-import { lazy, Suspense } from "react";
-import ProductsListing from "./questions/Pagination/ProductsListing";
-import TabFormComponent from "./questions/TabFormComponent";
-import AutoComponentSerachBar from "./questions/AutocompleteSearchbar";
+import FileExplorer from "./questions/FileExplorer";
+
+
 
 function App() {
-  const ProductsListingLazy = lazy(() =>
-    import("./questions/Pagination/ProductsListing")
-  );
+
 
   return (
     <>
-      <AutoComponentSerachBar />
+      <FileExplorer />
     </>
   );
 }

@@ -1,0 +1,31 @@
+.entity {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 6px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.entity-folder {
+    background: rgb(203, 200, 200);
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.entity-folder:hover {
+    background-color: rgba(203, 200, 200, 0.6);
+}
+
+.add-folder {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.entity-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}

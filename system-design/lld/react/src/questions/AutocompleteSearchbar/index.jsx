@@ -7,6 +7,7 @@ Important things implmented here
 1. debouncing
 2. caching
 3. showing matched with bold letters
+4. Keyword navigation
  */
 
 function AutoComponentSerachBar() {
