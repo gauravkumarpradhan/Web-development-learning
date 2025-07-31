@@ -4,6 +4,8 @@ import "./style.css";
 /*
 Nested file folder strcutre
 add or remove file/ folder
+edit name of a file/folder
+delete a file/folder
  */
 
 function FileExplorer() {
