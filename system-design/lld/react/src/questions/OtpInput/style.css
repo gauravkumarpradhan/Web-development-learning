@@ -1,0 +1,19 @@
+.input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.otp-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.otp-item:focus {
+    border: 1px solid red;
+    background: red;
+}
