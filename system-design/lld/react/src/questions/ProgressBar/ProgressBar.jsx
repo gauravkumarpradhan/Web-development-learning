@@ -2,7 +2,6 @@ import { MAX, MIN } from "./constants";
 import "./style.css";
 
 function ProgressBar({ percentage }) {
-    console.log("Percentage ", typeof percentage);
     return (
         <div>
             <h1 id="progress-label">Progress bar</h1>
