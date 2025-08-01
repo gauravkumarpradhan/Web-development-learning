@@ -3,7 +3,7 @@ import "./style.css";
 
 function OtpInput({ count, inputVals, setInputVals }) {
     const otpInputRef = useRef({});
-    const [lastUpdatedIndex, setLastUpdatedIndex] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(null);
 
     const Input = ({ index, onChange, handleKeywordPress }) => {
         return (
@@ -20,11 +20,11 @@ function OtpInput({ count, inputVals, setInputVals }) {
 
     useEffect(() => {
         if (
-            lastUpdatedIndex != null &&
-            lastUpdatedIndex >= 0 &&
-            lastUpdatedIndex < count
+            currentIndex != null &&
+            currentIndex >= 0 &&
+            currentIndex < count
         ) {
-            const input = otpInputRef.current[lastUpdatedIndex];
+            const input = otpInputRef.current[currentIndex];
             if (input) {
                 // Wait for DOM to update before focusing
                 setTimeout(() => {
@@ -34,7 +34,7 @@ function OtpInput({ count, inputVals, setInputVals }) {
                 }, 0);
             }
         }
-    }, [inputVals, lastUpdatedIndex]);
+    }, [currentIndex]);
 
     function handleOnChange(e, index) {
         let otpItemValue = e.target.value;
@@ -53,7 +53,7 @@ function OtpInput({ count, inputVals, setInputVals }) {
             });
 
             if (index < count - 1) {
-                setLastUpdatedIndex(index + 1);
+                setCurrentIndex(index + 1);
             }
         }
     }
@@ -63,9 +63,9 @@ function OtpInput({ count, inputVals, setInputVals }) {
         const inputVal = e.target.value;
 
         if (pressedKey === "ArrowRight" && index < count - 1) {
-            setLastUpdatedIndex(index + 1);
+            setCurrentIndex(index + 1);
         } else if (pressedKey === "ArrowLeft" && index > 0) {
-            setLastUpdatedIndex(index - 1);
+            setCurrentIndex(index - 1);
         } else if (pressedKey === "Backspace") {
             e.preventDefault();
             if (inputVal) {
@@ -74,14 +74,14 @@ function OtpInput({ count, inputVals, setInputVals }) {
                     newVals[index] = "";
                     return newVals;
                 });
-                setLastUpdatedIndex(index);
+                setCurrentIndex(index);
             } else if (index > 0) {
                 setInputVals((vals) => {
                     const newVals = [...vals];
                     newVals[index - 1] = "";
                     return newVals;
                 });
-                setLastUpdatedIndex(index - 1);
+                setCurrentIndex(index - 1);
             }
         }
     }
