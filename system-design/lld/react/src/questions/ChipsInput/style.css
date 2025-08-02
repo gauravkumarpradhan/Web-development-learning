@@ -1,0 +1,9 @@
+.chips-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.delete-icon {
+    cursor: pointer;
+}

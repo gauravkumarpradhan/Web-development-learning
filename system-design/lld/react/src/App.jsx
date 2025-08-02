@@ -1,10 +1,10 @@
-import Main from "./questions/OtpInput";
-import ProgressBar from "./questions/ProgressBar/ProgressBar";
+import TodoList from "./questions/TodoList";
+
 
 function App() {
   return (
     <>
-      <Main />
+      <TodoList />
     </>
   );
 }

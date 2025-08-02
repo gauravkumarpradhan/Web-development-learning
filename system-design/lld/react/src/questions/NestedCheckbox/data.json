@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Fruits",
+        "label": "Fruits",
+        "children": [
+            {
+                "id": 2,
+                "name": "Citrus",
+                "label": "Citrus",
+                "children": [
+                    { "id": 3, "name": "Orange", "label": "Orange" },
+                    { "id": 4, "name": "Lemon", "label": "Lemon" }
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Berries",
+                "label": "Berries",
+                "children": [
+                    { "id": 6, "name": "Strawberry", "label": "Strawberry" },
+                    { "id": 7, "name": "Blueberry", "label": "Blueberry" }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Tropical",
+        "label": "Tropical",
+        "children": [
+            { "id": 9, "name": "Mango", "label": "Mango" },
+            { "id": 10, "name": "Banana", "label": "Banana" }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Apple",
+        "label": "Apple"
+    }
+]

@@ -1,0 +1,18 @@
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-item {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.checkbox-child-list {
+    margin-left: 12px;
+}
+
+.checkbox-label {
+    font-weight: 600;
+}
