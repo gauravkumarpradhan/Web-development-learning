@@ -1,10 +1,10 @@
-import TicTacToe from "./questions/TicTacToe";
+import PollWidgetMainPage from "./questions/PollWidget";
 
 
 function App() {
   return (
     <>
-      <TicTacToe />
+      <PollWidgetMainPage />
     </>
   );
 }

@@ -1,0 +1,39 @@
+.poll-widget-main-helper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+.vote-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    width: fit-content;
+}
+
+.vote-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-vote-item-left,
+.top-vote-item-right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.vote-item-top-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
