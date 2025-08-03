@@ -1,10 +1,10 @@
-import TodoList from "./questions/TodoList";
+import TicTacToe from "./questions/TicTacToe";
 
 
 function App() {
   return (
     <>
-      <TodoList />
+      <TicTacToe />
     </>
   );
 }

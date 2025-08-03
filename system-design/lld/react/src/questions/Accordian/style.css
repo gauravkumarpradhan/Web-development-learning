@@ -1,0 +1,39 @@
+.accordian-container {
+    border-radius: 4px;
+    border: 0.5px solid rgb(131, 121, 121);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+}
+
+.accordian-item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0.5px solid rgb(131, 121, 121);
+}
+
+.accordian-item-title {
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordian-item-content {
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(177, 168, 168);
+    padding: 16px;
+}
+
+.accordian-item-title-focused {
+    background-color: rgb(170, 176, 181);
+}
