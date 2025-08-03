@@ -58,6 +58,9 @@ function PollWidget({
 
     return (
         <div className="vote-container">
+            <div>
+                <h1>Best YT channel to learn frontend</h1>
+            </div>
             {localOptions?.map((field, index) => {
                 return (
                     <div key={index} className="vote-item">
