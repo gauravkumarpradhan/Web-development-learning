@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Count down timer</title>
+        <script src="./index.js" async></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Countdown timer</h2>
+            <div class="timer">
+                <div class="timer-item" id="hours">
+                    <div class="timer-item-label">Hours</div>
+                    <input id="hours-id" />
+                </div>
+                <div>:</div>
+                <div class="timer-item" id="minutes">
+                    <div class="timer-item-label">Minutes</div>
+                    <input id="minutes-id" />
+                </div>
+                <div>:</div>
+                <div class="timer-item" id="seconds">
+                    <div class="timer-item-label">Seconds</div>
+                    <input id="seconds-id" />
+                </div>
+            </div>
+
+            <div>
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="resume">Resume</button>
+                <button id="reset">Rest</button>
+            </div>
+        </div>
+    </body>
+</html>
