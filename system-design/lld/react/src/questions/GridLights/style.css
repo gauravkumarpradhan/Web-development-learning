@@ -1,0 +1,25 @@
+#grid-container {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.grid-item-selected {
+    background-color: green;
+    cursor: auto;
+}
+
+.grid-item:nth-child(5) {
+    border: none;
+    pointer-events: none;
+    cursor: auto;
+}
