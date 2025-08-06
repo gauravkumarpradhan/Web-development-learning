@@ -1,0 +1,74 @@
+[data-theme="light"] {
+    --bg-color: white;
+    --text-color: black;
+    --heading-color: black;
+}
+
+[data-theme="dark"] {
+    --bg-color: black;
+    --text-color: white;
+    --heading-color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+.switch {
+    width: 60px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    height: 100%;
+    width: 20px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    left: 4%;
+    transition: left 0.4s ease;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    left: 0%;
+}
+
+.input-checkbox:checked + .circle {
+    left: calc(96% - 20px);
+}

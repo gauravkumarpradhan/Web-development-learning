@@ -1,11 +1,13 @@
-import PollWidgetMainPage from "./questions/PollWidget";
-import SteppedMainPage from "./questions/Stepper";
+import { ThemeProvider } from "./questions/DarkMode/mode";
+import RouterContainer from "./questions/DarkMode/routes";
 
 
 function App() {
   return (
     <>
-      <SteppedMainPage />
+      <ThemeProvider>
+        <RouterContainer />
+      </ThemeProvider>
     </>
   );
 }
