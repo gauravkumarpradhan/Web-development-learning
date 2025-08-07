@@ -3,6 +3,16 @@ import "./style.css";
 import Dropdown from "./Dropdown";
 import { FaExchangeAlt } from "react-icons/fa";
 
+/*
+Requirements
+1. The selected option from or to can be set favourite.
+2. If the selected option is favourite then it should have star be color as yellow
+3. it should persisit the state of the star even though we refresh
+4. the favourite options should be visible at the top of the dropdown options
+5. we can exchange the from currency and to currency by clicking on the exchange icon
+6. use of useClickoutside also has come into play
+ */
+
 function CurrencyConverter() {
     const [currentOptions, setCurrencyOptions] = useState([]);
     const [conversionInfo, setConversionInfo] = useState({
