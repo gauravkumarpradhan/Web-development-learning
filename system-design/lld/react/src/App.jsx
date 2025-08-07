@@ -1,9 +1,9 @@
-import SelectableGridMainPage from "./questions/SelectableGrid/SelectableGridMainPage";
+import CurrencyConverter from "./questions/CurrencyConverter/index.jsx";
 
 function App() {
   return (
     <>
-      <SelectableGridMainPage />
+      <CurrencyConverter />
     </>
   );
 }
