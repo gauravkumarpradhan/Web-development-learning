@@ -1,14 +1,9 @@
-import Breadcrumbs from "./questions/Breadcrumbs";
-import { ThemeProvider } from "./questions/DarkMode/mode";
-import RouterContainer from "./questions/DarkMode/routes";
-import QuizApp from "./questions/quizApp";
-
+import SelectableGridMainPage from "./questions/SelectableGrid/SelectableGridMainPage";
 
 function App() {
-
   return (
     <>
-      <QuizApp />
+      <SelectableGridMainPage />
     </>
   );
 }
