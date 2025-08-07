@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import Dropdown from "./Dropdown";
 import { FaExchangeAlt } from "react-icons/fa";
