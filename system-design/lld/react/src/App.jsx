@@ -1,9 +1,9 @@
-import CurrencyConverter from "./questions/CurrencyConverter/index.jsx";
+import PasswordGenerator from "./questions/PasswordGenerator/index.jsx";
 
 function App() {
   return (
     <>
-      <CurrencyConverter />
+      <PasswordGenerator />
     </>
   );
 }

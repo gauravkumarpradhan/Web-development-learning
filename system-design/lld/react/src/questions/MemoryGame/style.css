@@ -1,0 +1,21 @@
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 35px);
+    grid-template-rows: repeat(2, 35px);
+    grid-gap: 10px 10px;
+}
+
+.grid-item {
+    justify-self: stretch;
+    background-color: red;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.selected {
+    background-color: green;
+    color: white;
+}
