@@ -1,9 +1,10 @@
+import CommentSection from "./questions/NestedComments/index.jsx";
 import PasswordGenerator from "./questions/PasswordGenerator/index.jsx";
 
 function App() {
   return (
     <>
-      <PasswordGenerator />
+      <CommentSection />
     </>
   );
 }

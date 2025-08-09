@@ -4,9 +4,10 @@ import { FaRegCopy } from "react-icons/fa";
 import { FaCopy } from "react-icons/fa";
 import { CHECK_BOXES_CONFIG } from "./constant";
 import usePasswordGenerator from "./usePasswordGenerator";
+import Button from "./Button";
+import useCopy from "./useCopy";
 
 function PasswordGenerator() {
-    const [copied, setCopied] = useState(false);
     const [config, setConfig] = useState({
         length: 0,
         uppercase: false,
@@ -17,15 +18,7 @@ function PasswordGenerator() {
     const { password, generatePassword, strength } = usePasswordGenerator({
         schema: config,
     });
-
-    function handleCopy() {
-        setCopied(true);
-        navigator.clipboard.writeText(password).then(async () => {
-            setTimeout(() => {
-                setCopied(false);
-            }, 300);
-        });
-    }
+    const { copied, handleCopy } = useCopy();
 
     function handleCheckboxSelection(key) {
         setConfig((prevConfig) => ({
@@ -40,7 +33,10 @@ function PasswordGenerator() {
             <div className="container">
                 <div className="copy-container">
                     <div>{password ? password : ""}</div>
-                    <div className="copy-icon" onClick={handleCopy}>
+                    <div
+                        className="copy-icon"
+                        onClick={() => handleCopy(password)}
+                    >
                         {copied ? <FaCopy /> : <FaRegCopy />}
                     </div>
                 </div>
@@ -94,9 +90,10 @@ function PasswordGenerator() {
                             <div>{strength ? strength : "-"}</div>
                         </div>
 
-                        <button onClick={generatePassword} >
-                            Generate Password
-                        </button>
+                        <Button
+                            label={"Generate Password"}
+                            onClick={generatePassword}
+                        />
                     </div>
                 </div>
             </div>

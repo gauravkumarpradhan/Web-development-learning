@@ -1,0 +1,50 @@
+{
+    "1": {
+        "id": "1",
+        "text": "Root comment 1",
+        "parent": null,
+        "replies": [2, 3]
+    },
+    "11": {
+        "id": "11",
+        "text": "Root comment 2",
+        "parent": null,
+        "replies": [12]
+    },
+    "2": {
+        "id": "2",
+        "text": "Child of Root 1 - 1",
+        "parent": 1,
+        "replies": [4]
+    },
+    "3": {
+        "id": "3",
+        "text": "Child of Root 1 - 2",
+        "parent": 1,
+        "replies": []
+    },
+    "4": {
+        "id": "4",
+        "text": "Child of Child 2",
+        "parent": 2,
+        "replies": [5, 6]
+    },
+    "5": {
+        "id": "5",
+        "text": "Grandchild 1",
+        "parent": 4,
+        "replies": []
+    },
+    "6": {
+        "id": "6",
+        "text": "Grandchild 2",
+        "parent": 4,
+        "replies": []
+    },
+    "12": {
+        "id": "12",
+        "text": "Child of Root 2",
+        "parent": 11,
+        "replies": []
+    }
+}
