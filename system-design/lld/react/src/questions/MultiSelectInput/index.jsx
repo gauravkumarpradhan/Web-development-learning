@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useMemo } from "react";
 import { useState } from "react";
+import useDebounce from "../AutocompleteSearchbar/hooks";
 import { useClickOutside } from "../CurrencyConverter/hooks";
 import "./style.css";
 
@@ -15,16 +16,18 @@ function MultiSelectInput() {
     }, [pills]);
     const ref = useClickOutside(() => setShowOptions(false));
     const [currentIndex, setCurrentIndex] = useState(-1);
+    const debouncedFetchUsers = useDebounce(fetProducts, 1000);
+
 
     useEffect(() => {
-        async function fetProducts() {
-            fetch(`https://dummyjson.com/users/search?q=${searchTerm}`)
-                .then((res) => res.json())
-                .then((res) => setOptions(res?.users));
-        }
-
-        fetProducts();
+        debouncedFetchUsers();
     }, [searchTerm]);
+
+    async function fetProducts() {
+        fetch(`https://dummyjson.com/users/search?q=${searchTerm}`)
+            .then((res) => res.json())
+            .then((res) => setOptions(res?.users));
+    }
 
     function handleOptionClick(optionInfo) {
         setPills((prevPills) => {
