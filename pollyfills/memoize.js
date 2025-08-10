@@ -9,15 +9,14 @@ function myMemoize(callbackFunction, context) {
             throw new Error("The numbers provided are same, so there is no recruiment of computing");
         }
     }
-}
-
+};
 
 const clumsySquare = (num1, num2) => {
     for (let i = 1; i <= 10000000; i++) {
     }
-
     return num1 * num2;
-}
+};
+
 
 // const compute = myMemoize(clumsySquare);
 // console.time("First call");
