@@ -1,10 +1,9 @@
-import CommentSection from "./questions/NestedComments/index.jsx";
-import PasswordGenerator from "./questions/PasswordGenerator/index.jsx";
+import MultiSelectInput from "./questions/MultiSelectInput/index.jsx";
 
 function App() {
   return (
     <>
-      <CommentSection />
+      <MultiSelectInput />
     </>
   );
 }
